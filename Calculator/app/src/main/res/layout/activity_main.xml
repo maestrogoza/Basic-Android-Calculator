@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:background="#202020"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <Button
+            android:id="@+id/btnCos"
+            android:layout_width="99dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#323232"
+            android:onClick="TrigonometricaPulsada"
+            android:text="cos(x)"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/btnSin"
+            app:layout_constraintStart_toStartOf="@+id/btn8" />
+
+        <Button
+            android:id="@+id/btnTan"
+            android:layout_width="99dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#323232"
+            android:onClick="TrigonometricaPulsada"
+            android:text="tan(x)"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/btnCos"
+            app:layout_constraintStart_toStartOf="@+id/btn9" />
+
+        <Button
+            android:id="@+id/btnDiv"
+            android:layout_width="97dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="3dp"
+            android:backgroundTint="#323232"
+            android:onClick="OperacionPulsada"
+            android:text="/"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/btnTan"
+            app:layout_constraintEnd_toEndOf="@+id/btnEqu"
+            app:layout_constraintStart_toEndOf="@+id/btnTan" />
+
+        <Button
+            android:id="@+id/btnSin"
+            android:layout_width="99dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#323232"
+            android:onClick="TrigonometricaPulsada"
+            android:text="sin(x)"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/btn7"
+            app:layout_constraintStart_toStartOf="@+id/btn7" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="99dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#323232"
+            android:onClick="NumeroPulsado"
+            android:text="9"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn8"
+            app:layout_constraintStart_toStartOf="@+id/btn6" />
+
+        <Button
+            android:id="@+id/btnMult"
+            android:layout_width="97dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="3dp"
+            android:backgroundTint="#323232"
+            android:onClick="OperacionPulsada"
+            android:text="x"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn9"
+            app:layout_constraintStart_toEndOf="@+id/btn9" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="99dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#323232"
+            android:onClick="NumeroPulsado"
+            android:text="8"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn7"
+            app:layout_constraintStart_toStartOf="@+id/btn5" />
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="99dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#323232"
+            android:onClick="NumeroPulsado"
+            android:text="7"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/btn4"
+            app:layout_constraintStart_toStartOf="@+id/btn4" />
+
+        <Button
+            android:id="@+id/btnSubs"
+            android:layout_width="97dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="3dp"
+            android:backgroundTint="#323232"
+            android:onClick="OperacionPulsada"
+            android:text="-"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn6"
+            app:layout_constraintStart_toEndOf="@+id/btn6" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="99dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#323232"
+            android:onClick="NumeroPulsado"
+            android:text="5"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn4"
+            app:layout_constraintStart_toStartOf="@+id/btn2" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="99dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#323232"
+            android:onClick="NumeroPulsado"
+            android:text="6"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn5"
+            app:layout_constraintStart_toStartOf="@+id/btn3" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="99dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#323232"
+            android:onClick="NumeroPulsado"
+            android:text="4"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/btn1"
+            app:layout_constraintStart_toStartOf="@+id/btnC" />
+
+        <Button
+            android:id="@+id/btnC"
+            android:layout_width="99dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="2dp"
+            android:backgroundTint="#5D5B5B"
+            android:onClick="BorrarPantalla"
+            android:text="C"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:rippleColor="#F44336" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="99dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#323232"
+            android:onClick="NumeroPulsado"
+            android:text="1"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnC"
+            app:layout_constraintEnd_toEndOf="@+id/btnC"
+            app:layout_constraintStart_toStartOf="@+id/btnC" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="99dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#323232"
+            android:onClick="NumeroPulsado"
+            android:text="2"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnC"
+            app:layout_constraintStart_toStartOf="@+id/btn0" />
+
+        <Button
+            android:id="@+id/btn0"
+            android:layout_width="99dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="3dp"
+            android:backgroundTint="#323232"
+            android:onClick="NumeroPulsado"
+            android:text="0"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnC" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="99dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#323232"
+            android:onClick="NumeroPulsado"
+            android:text="3"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn2"
+            app:layout_constraintStart_toStartOf="@+id/btnEqu" />
+
+        <Button
+            android:id="@+id/btnEqu"
+            android:layout_width="198dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="3dp"
+            android:backgroundTint="#E893F4"
+            android:foregroundTint="#000000"
+            android:onClick="RealizarOperacion"
+            android:text="="
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn0"
+            app:layout_constraintStart_toEndOf="@+id/btn0" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="97dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="3dp"
+            android:backgroundTint="#323232"
+            android:onClick="OperacionPulsada"
+            android:text="+"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn3"
+            app:layout_constraintStart_toEndOf="@+id/btn3" />
+
+        <Switch
+            android:id="@+id/switchUnits"
+            android:layout_width="100dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="272dp"
+            android:layout_marginEnd="16dp"
+            android:text="º / rad."
+            android:textColor="#BABABA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewScreen"
+            android:layout_width="412dp"
+            android:layout_height="104dp"
+            android:layout_marginTop="116dp"
+            android:gravity="end"
+            android:padding="16dp"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
